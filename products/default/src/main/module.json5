@@ -16,12 +16,32 @@
       {
         "name": "Entryability",
         "srcEntry": "./ets/entryability/Entryability.ets",
-        "description": "$string:Entryability_desc",
+        "description": "$string:module_desc",
         "icon": "$media:icon",
-        "label": "$string:Entryability_label",
+        "label": "$string:module_label",
         "startWindowIcon": "$media:startIcon",
         "startWindowBackground": "$color:start_window_background",
-        "exported": true
+        "exported": true,
+        "skills": [
+          {
+            // 在桌面上显示UIAbility的图标
+            "entities": [
+              "entity.system.home"
+            ],
+            // 在桌面上显示UIAbility的图标
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      }
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
       }
     ]
   }

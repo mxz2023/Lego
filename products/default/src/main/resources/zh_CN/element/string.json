@@ -1,16 +1,12 @@
 {
   "string": [
     {
+      "name": "module_label",
+      "value": "乐高"
+    },
+    {
       "name": "module_desc",
       "value": "模块描述"
-    },
-    {
-      "name": "Entryability_desc",
-      "value": "description"
-    },
-    {
-      "name": "Entryability_label",
-      "value": "label"
     }
   ]
 }
