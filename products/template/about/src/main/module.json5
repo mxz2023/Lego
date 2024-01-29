@@ -1,0 +1,28 @@
+{
+  "module": {
+    "name": "about",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "AboutAbility",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "AboutAbility",
+        "srcEntry": "./ets/aboutability/AboutAbility.ets",
+        "description": "$string:ability_desc",
+        "icon": "$media:icon",
+        "label": "$string:ability_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

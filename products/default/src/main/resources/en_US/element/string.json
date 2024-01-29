@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "Entryability_desc",
+      "value": "description"
+    },
+    {
+      "name": "Entryability_label",
+      "value": "label"
+    }
+  ]
+}

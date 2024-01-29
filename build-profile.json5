@@ -1,0 +1,194 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/gemini/.ohos/config/default_Lego_AZMYHN6eemVNAsrcs_1s_nsD3fCPxz9a1dinYQjBCC8=.cer",
+          "storePassword": "0000001BA13C0D3F7F92F734776453DC93CE58D49938CEDEBD2C219B57346DF4066E7914326B1FCE38F4F1",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B4A882BDEA8261D9D5FFF4210AB07114C617AE02551A53F15A92E5E2121C4B28E26268E1F677349",
+          "profile": "/Users/gemini/.ohos/config/default_Lego_AZMYHN6eemVNAsrcs_1s_nsD3fCPxz9a1dinYQjBCC8=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/gemini/.ohos/config/default_Lego_AZMYHN6eemVNAsrcs_1s_nsD3fCPxz9a1dinYQjBCC8=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": "4.1.0(11)",
+        "compatibleSdkVersion": "4.1.0(11)",
+        "runtimeOS": "HarmonyOS",
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "utils",
+      "srcPath": "./common/utils",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "components",
+      "srcPath": "./common/components",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "todolist",
+      "srcPath": "./features/todolist",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "default",
+      "srcPath": "./products/default",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "webview",
+      "srcPath": "./features/webview",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "category",
+      "srcPath": "./products/template/category",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "list",
+      "srcPath": "./products/template/list",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "grid",
+      "srcPath": "./products/template/grid",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "about",
+      "srcPath": "./products/template/about",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mine",
+      "srcPath": "./products/template/mine",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "login",
+      "srcPath": "./products/template/login",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "launch",
+      "srcPath": "./products/template/launch",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "categor_list",
+      "srcPath": "./products/template/categor_list",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
