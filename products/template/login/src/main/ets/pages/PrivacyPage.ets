@@ -23,7 +23,7 @@ struct PrivacyPage {
           bottom: $r('app.float.icon_margin_bottom')
         })
       Web({
-        src: $rawfile('../../resources/rawfile/privacy.html'),
+        src: $rawfile('privacy.html'),
         controller: this.webController
       })
     }
