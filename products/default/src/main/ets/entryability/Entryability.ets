@@ -1,3 +1,14 @@
+/**
+ * Copyright (c) 2023-2024 Mxz Co., Ltd.
+ *
+ * @file Entryability.ets
+ * @project Lego
+ * @author gemini
+ * @crateTime 2024-01-30
+ * @desc
+ */
+
+
 import AbilityConstant from '@ohos.app.ability.AbilityConstant';
 import hilog from '@ohos.hilog';
 import UIAbility from '@ohos.app.ability.UIAbility';

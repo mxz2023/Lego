@@ -19,7 +19,7 @@
         "description": "$string:module_desc",
         "icon": "$media:icon",
         "label": "$string:module_label",
-        "startWindowIcon": "$media:startIcon",
+        "startWindowIcon": "$media:startIcon2",
         "startWindowBackground": "$color:start_window_background",
         "exported": true,
         "skills": [
@@ -33,7 +33,7 @@
               "action.system.home"
             ]
           }
-        ]
+        ],
       }
     ],
     "requestPermissions": [

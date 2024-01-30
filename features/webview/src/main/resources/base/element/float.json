@@ -1,0 +1,56 @@
+{
+  "float": [
+    {
+      "name": "normal_img_size",
+      "value": "44vp"
+    },
+    {
+      "name": "title_text_size",
+      "value": "17fp"
+    },
+    {
+      "name": "title_navi_title_text_size",
+      "value": "16fp"
+    },
+    {
+      "name": "title_navi_subtitle_text_size",
+      "value": "12fp"
+    },
+    {
+      "name": "normal_text_size",
+      "value": "14vp"
+    },
+    {
+      "name": "small_text_size",
+      "value": "12vp"
+    },
+    {
+      "name": "padding_margin",
+      "value": "6vp"
+    },
+    {
+      "name": "border_radius",
+      "value": "16vp"
+    },
+    {
+      "name": "loading_img_margin",
+      "value": "260vp"
+    },
+    {
+      "name": "loading_img_size",
+      "value": "72vp"
+    },
+    {
+      "name": "failure_img_size",
+      "value": "120vp"
+    },
+    {
+      "name": "reload_btn_height",
+      "value": "32vp"
+    },
+    {
+      "name": "reload_btn_width",
+      "value": "80vp"
+    }
+  ]
+}

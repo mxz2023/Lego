@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "Web模块"
+    },
+    {
+      "name": "load_failed",
+      "value": "网络加载失败"
+    },
+    {
+      "name": "reload",
+      "value": "重新加载"
+    },
+    {
+      "name": "loading",
+      "value": "正在加载..."
+    },
+    {
+      "name": "no_more",
+      "value": "已经滑至底部"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>鸿蒙JavaScript桥总纲</title>
+    <script src="./bridge.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .header {
+        margin: 20px 20px 0;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(
+          to right,
+          rgb(183, 187, 225),
+          rgb(103, 103, 197)
+        );
+        margin: 20px;
+        border-radius: 5px;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .bridge-btn {
+        margin-bottom: 15px;
+        display: flex;
+        padding: 0.8em;
+        border: 0;
+        font-size: 1rem;
+        color: white;
+        border-radius: 0.5em;
+        background-color: #57b;
+        box-shadow: 0 0.4em #148;
+        text-shadow: 1px 1px #148;
+      }
+      .bridge-btn:active {
+        background-color: #456ab5;
+        transform: translateY(0.1em);
+        box-shadow: 0 0.3em #148;
+      }
+      .bridge-btn:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">鸿蒙JavaScript桥总纲</div>
+    <div
+      class="wrapper-btn"
+      style="
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 20px;
+      "
+    ></div>
+    <script src="./index.js"></script>
+  </body>
+</html>

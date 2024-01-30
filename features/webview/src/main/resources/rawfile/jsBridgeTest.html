@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimum-scale=1,maximum-scale=1">
+    <meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes">
+    <title>callbackFix</title>
+    <link rel="stylesheet" href="//static.360buyimg.com/finance/mobile/base/cm/1.0.0/reset.css">
+    <script src="//m.jr.jd.com/crayfish/zui/zepto/1.1.6/zepto.js" type="text/javascript"></script>
+    <script src="//m.jr.jd.com/crayfish/zui/device/1.0.0/device.js" type="text/javascript"></script>
+    <script src="https://storage.360buyimg.com/rama/common/vconsole/v3146/vconsole.min.js"></script>
+    <script src="https://jrb.jr.jd.com/common/jssdk/jrbridge/2.2.1/jrbridge.js	"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <style>
+      html{
+        background: rgba(0, 0, 0, 0.2)
+      }
+      section{
+        margin: 0 30px;
+      }
+      .title{
+        text-align: center;
+        padding: 20px 0;
+      }
+      .nativeChanel{
+        padding-bottom: 1rem;
+        border-bottom: 3px dashed red;
+        margin-bottom: 1rem;
+      }
+      #app p{
+        padding: 5px 0;
+      }
+      .buttonStyle{
+        width: 100%;
+        height: 4rem;
+        border: none;
+        background: #508cee;
+        color: white;
+      }
+      .responseData,.jdpayResponseData{
+        height: 100px;
+        border: 1px solid #d6d9dd;
+        border-radius: 5px;
+        overflow: auto;
+        background: white;
+      }
+    </style>
+<script type="text/javascript" src="../../jrbridge/2.2.2/index.min.js"></script></head>
+<body>
+
+  <section>
+    <h5 class="title">客户端通信参数配置页（同步/异步）</h5>
+    <div id="app">
+
+      <div class="nativeChanel" v-for="chanel in nativeChanels">
+        <p>
+          <textarea type="textarea" style="width: 99%;border-color: #e0e2e5" :rows="6" placeholder="h5页上行参数" v-model="chanel.param"></textarea>
+        </p>
+        <p class="responseData" :class="chanel.responseClass">
+          <span style='padding-left:15px;color:#c0c4cb'>客户端下行参数</span>
+        </p>
+      </div>
+
+
+
+      <p>
+        <button class="buttonStyle" type="primary" size="small" @click="addNativeChanel">新增通信通道</button>
+      </p>
+      <p>
+        <button class="buttonStyle" type="primary" size="small" @click="deleteNativeChanel">删除通信通道</button>
+      </p>
+      <p>
+        <button class="buttonStyle" type="primary" size="small" @click="clientResponse">与客户端通信</button>
+      </p>
+      <p>
+        <button class="buttonStyle" type="primary" size="small" @click="paramReset">参数重置</button>
+      </p>
+      <p>
+        <button class="buttonStyle" type="primary" size="small" @click="defaultParamSet">参数设置示例</button>
+      </p>
+    </div>
+  </section>
+
+
+  <script>
+    var vConsole = new VConsole();
+    var app = new Vue({
+      el: '#app',
+      data: {
+        textareaData:'',
+        nativeChanels: [{
+          param: '',
+          responseClass: 'responseClass1'
+        }]
+      },
+      methods:{
+        // 新增通信通道
+        addNativeChanel: function() {
+          var obj = {
+            param: '',
+            responseClass: 'responseClass' + (this.nativeChanels.length + 1)
+          }
+          var arr = this.nativeChanels
+          arr.push(obj)
+          this.nativeChanels = arr
+        },
+        // 删除通信通道
+        deleteNativeChanel: function() {
+          var list = this.nativeChanels
+          if (list.length > 1) {
+            list.pop()
+          }
+          this.nativeChanels = list
+        },
+        // 与客户端通信
+        clientResponse: function(){
+          try{
+            var list = this.nativeChanels
+
+            for (let i = 0; i<list.length; i++) {
+              var param = JSON.parse(list[i].param)
+              JrBridge.callNative(param, function(data){
+                console.log('返回参数：',data)
+                if(typeof data == 'object' || typeof data == 'string'){
+                  var objStr = JSON.stringify(data, null, 2);
+                  $("." + list[i].responseClass).html("");
+                  $("." + list[i].responseClass).append("<textarea style='border:none;width:100%;height:100%'>" + objStr + "</textarea>")
+                } 
+              })
+            }
+            
+          } catch (error) {
+            console.log(error)
+          }
+        },
+        // 参数重置
+        paramReset: function(){
+          var list = this.nativeChanels
+          var arr = []
+          for (var i = 0; i<list.length; i++) {
+            var obj = list[i]
+            obj.param = ''
+            arr.push(obj)
+          }
+          this.nativeChanels = arr
+          $(".responseData").html("<span style='padding-left:15px;color:#c0c4cb'>客户端下行参数</span>");
+        },
+        // 参数设置示例
+        defaultParamSet: function(){
+          var list = this.nativeChanels
+          list[0].param = '{"type": "1"}'
+          list[0].responseClass = 'responseClass1'
+          // var obj = {
+          //   "type": "1"
+          // }
+          // this.textareaData = JSON.stringify(obj, null, 2);
+        }
+      },
+      mounted () {
+        JrBridge.openXViewStatus({type: 1})
+      }
+    })
+  </script>
+</body>
+</html>

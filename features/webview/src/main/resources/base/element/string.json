@@ -1,8 +1,32 @@
 {
   "string": [
     {
-      "name": "shared_desc",
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
       "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "京东金融鸿蒙Web"
+    },
+    {
+      "name": "load_failed",
+      "value": "Failed to load the network"
+    },
+    {
+      "name": "reload",
+      "value": "Reload"
+    },
+    {
+      "name": "loading",
+      "value": "Loading..."
+    },
+    {
+      "name": "no_more",
+      "value": "No more resources"
     }
   ]
 }

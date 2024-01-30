@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "web module"
+    },
+    {
+      "name": "load_failed",
+      "value": "Failed to load the network"
+    },
+    {
+      "name": "reload",
+      "value": "Reload"
+    },
+    {
+      "name": "loading",
+      "value": "Loading..."
+    },
+    {
+      "name": "no_more",
+      "value": "No more resources"
+    }
+  ]
+}
