@@ -6,9 +6,9 @@
         "type": "HarmonyOS",
         "material": {
           "certpath": "/Users/gemini/.ohos/config/default_Lego_AZMYHN6eemVNAsrcs_1s_nsD3fCPxz9a1dinYQjBCC8=.cer",
-          "storePassword": "0000001BA13C0D3F7F92F734776453DC93CE58D49938CEDEBD2C219B57346DF4066E7914326B1FCE38F4F1",
+          "storePassword": "0000001B6C00356D1FBA61B8D6062419E2B06F11E37C8268570B3569F90B63D260086C0F136DB70ED05D04",
           "keyAlias": "debugKey",
-          "keyPassword": "0000001B4A882BDEA8261D9D5FFF4210AB07114C617AE02551A53F15A92E5E2121C4B28E26268E1F677349",
+          "keyPassword": "0000001B0DC463878F1E3A1182191F55D28157D0E7BD70D10B5251C407B3DA00D8BD4B0B40FED3C3121164",
           "profile": "/Users/gemini/.ohos/config/default_Lego_AZMYHN6eemVNAsrcs_1s_nsD3fCPxz9a1dinYQjBCC8=.p7b",
           "signAlg": "SHA256withECDSA",
           "storeFile": "/Users/gemini/.ohos/config/default_Lego_AZMYHN6eemVNAsrcs_1s_nsD3fCPxz9a1dinYQjBCC8=.p12"

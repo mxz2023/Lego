@@ -120,7 +120,7 @@ struct WebViewPage {
       this.backgroundData.opacity = 1
       this.titleData.titleStyle = this.naviData.scrollConfig.naviIcon ?? WebNaviViewModel.WebNavigationStyle.Black
       this.titleData.showTitle = this.naviData.scrollConfig.showTitle ?? true
-      this.backgroundData.bgColor = this.naviData.scrollConfig.bgColor ? [this.naviData.scrollConfig.bgColor] : [$r('module.color.default_background_color')]
+      this.backgroundData.bgColor = this.naviData.scrollConfig.bgColor ? [this.naviData.scrollConfig.bgColor] : [$r('app.color.default_background_color')]
     } else {
       this.backgroundData.opacity = data.yOffset / navBarTotalHeight
       this.titleData.titleStyle = this.naviData.normalConfig.naviIcon ?? WebNaviViewModel.WebNavigationStyle.Black

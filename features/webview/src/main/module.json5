@@ -2,7 +2,7 @@
   "module": {
     "name": "webview",
     "type": "shared",
-    "description": "$string:shared_desc",
+    "description": "$string:module_desc",
     "deviceTypes": [
       "phone",
       "tablet",
