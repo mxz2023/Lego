@@ -3,6 +3,7 @@
     "name": "default",
     "type": "feature",
     "description": "$string:module_desc",
+    "srcEntry": "./ets/myabilitystage/MyAbilityStage.ets",
     "mainElement": "Entryability",
     "deviceTypes": [
       "phone",

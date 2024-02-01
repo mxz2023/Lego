@@ -8,6 +8,8 @@
  * @desc
  */
 
+import { getNavi } from '../component/navi'
+
 @Entry
 @Component
 struct Index {
@@ -15,6 +17,7 @@ struct Index {
 
   build() {
     Row() {
+      getNavi()
       Column() {
         Text(this.message)
           .fontSize(50)
